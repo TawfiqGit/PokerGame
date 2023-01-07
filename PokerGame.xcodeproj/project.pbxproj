@@ -123,7 +123,6 @@
 			children = (
 				848FC3BE2966FE8B00329815 /* AppDelegate.swift */,
 				848FC3C02966FE8B00329815 /* SceneDelegate.swift */,
-				848FC3C42966FE8B00329815 /* Main.storyboard */,
 				848FC3CA2966FE8C00329815 /* Assets.xcassets */,
 				848FC3CC2966FE8C00329815 /* LaunchScreen.storyboard */,
 				848FC3CF2966FE8C00329815 /* Info.plist */,
@@ -167,9 +166,10 @@
 		848FC3F32967040500329815 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				848FC3C22966FE8B00329815 /* ViewController.swift */,
+				848FC3C42966FE8B00329815 /* Main.storyboard */,
 				848FC4052967053300329815 /* Player */,
 				848FC4002967051100329815 /* Board */,
-				848FC3C22966FE8B00329815 /* ViewController.swift */,
 			);
 			name = Views;
 			path = Protocols/Views;
