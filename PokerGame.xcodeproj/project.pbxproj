@@ -7,26 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8407EA192993FBFB005DC779 /* Carpet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EA182993FBFB005DC779 /* Carpet.swift */; };
+		8407EA1B2993FC11005DC779 /* CarpetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EA1A2993FC11005DC779 /* CarpetViewModel.swift */; };
+		8444D26B2993DD9E00854E69 /* CarpetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444D2692993DD9E00854E69 /* CarpetCell.swift */; };
+		8444D2762993E58000854E69 /* CarpetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444D2742993E58000854E69 /* CarpetViewController.swift */; };
+		8444D27E2993EE6400854E69 /* CarpetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444D26A2993DD9E00854E69 /* CarpetCell.xib */; };
+		8444D27F2993EE6400854E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848FC3CA2966FE8C00329815 /* Assets.xcassets */; };
+		8444D2802993EE6400854E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848FC3CC2966FE8C00329815 /* LaunchScreen.storyboard */; };
+		844BD7E12993F19700D597FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BD7DF2993F19700D597FD /* Main.storyboard */; };
 		848FC3BF2966FE8B00329815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3BE2966FE8B00329815 /* AppDelegate.swift */; };
 		848FC3C12966FE8B00329815 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3C02966FE8B00329815 /* SceneDelegate.swift */; };
-		848FC3C32966FE8B00329815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3C22966FE8B00329815 /* ViewController.swift */; };
-		848FC3C62966FE8B00329815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848FC3C42966FE8B00329815 /* Main.storyboard */; };
 		848FC3C92966FE8B00329815 /* PokerGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3C72966FE8B00329815 /* PokerGame.xcdatamodeld */; };
-		848FC3CB2966FE8C00329815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848FC3CA2966FE8C00329815 /* Assets.xcassets */; };
-		848FC3CE2966FE8C00329815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848FC3CC2966FE8C00329815 /* LaunchScreen.storyboard */; };
 		848FC3D92966FE8C00329815 /* PokerGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3D82966FE8C00329815 /* PokerGameTests.swift */; };
 		848FC3E32966FE8C00329815 /* PokerGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3E22966FE8C00329815 /* PokerGameUITests.swift */; };
 		848FC3E52966FE8C00329815 /* PokerGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3E42966FE8C00329815 /* PokerGameUITestsLaunchTests.swift */; };
-		848FC3F9296704DC00329815 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3F8296704DC00329815 /* Card.swift */; };
-		848FC3FB296704EA00329815 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3FA296704EA00329815 /* Player.swift */; };
-		848FC3FE2967050B00329815 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3FC2967050B00329815 /* BoardViewController.swift */; };
-		848FC3FF2967050B00329815 /* BoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FC3FD2967050B00329815 /* BoardViewController.xib */; };
-		848FC4032967052F00329815 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4012967052F00329815 /* PlayerViewController.swift */; };
-		848FC4042967052F00329815 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FC4022967052F00329815 /* PlayerViewController.xib */; };
-		848FC4072967055900329815 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4062967055900329815 /* BoardViewModel.swift */; };
-		848FC4092967057100329815 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4082967057100329815 /* PlayerViewModel.swift */; };
-		848FC40B296705AF00329815 /* APIDeckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC40A296705AF00329815 /* APIDeckCard.swift */; };
-		848FC40D296705CE00329815 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC40C296705CE00329815 /* State.swift */; };
+		848FC3F9296704DC00329815 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3F8296704DC00329815 /* Pack.swift */; };
+		848FC40B296705AF00329815 /* ApiDeckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC40A296705AF00329815 /* ApiDeckCard.swift */; };
+		84B57D5C2969D13900198B90 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B57D5B2969D13900198B90 /* HttpRequestHelper.swift */; };
+		84C092D82996581500126807 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C092D72996581500126807 /* Tools.swift */; };
+		84C092DC299693CB00126807 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C092DB299693CB00126807 /* GlobalVariable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8407EA182993FBFB005DC779 /* Carpet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpet.swift; sourceTree = "<group>"; };
+		8407EA1A2993FC11005DC779 /* CarpetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpetViewModel.swift; sourceTree = "<group>"; };
+		8444D2692993DD9E00854E69 /* CarpetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpetCell.swift; sourceTree = "<group>"; };
+		8444D26A2993DD9E00854E69 /* CarpetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarpetCell.xib; sourceTree = "<group>"; };
+		8444D2742993E58000854E69 /* CarpetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpetViewController.swift; sourceTree = "<group>"; };
+		844BD7E02993F19700D597FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PokerGame/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		848FC3BB2966FE8B00329815 /* PokerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848FC3BE2966FE8B00329815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848FC3C02966FE8B00329815 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		848FC3C22966FE8B00329815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		848FC3C52966FE8B00329815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		848FC3C82966FE8B00329815 /* PokerGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PokerGame.xcdatamodel; sourceTree = "<group>"; };
 		848FC3CA2966FE8C00329815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848FC3CD2966FE8C00329815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,16 +64,11 @@
 		848FC3DE2966FE8C00329815 /* PokerGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848FC3E22966FE8C00329815 /* PokerGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerGameUITests.swift; sourceTree = "<group>"; };
 		848FC3E42966FE8C00329815 /* PokerGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		848FC3F8296704DC00329815 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		848FC3FA296704EA00329815 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		848FC3FC2967050B00329815 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
-		848FC3FD2967050B00329815 /* BoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoardViewController.xib; sourceTree = "<group>"; };
-		848FC4012967052F00329815 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		848FC4022967052F00329815 /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
-		848FC4062967055900329815 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
-		848FC4082967057100329815 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
-		848FC40A296705AF00329815 /* APIDeckCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDeckCard.swift; sourceTree = "<group>"; };
-		848FC40C296705CE00329815 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		848FC3F8296704DC00329815 /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
+		848FC40A296705AF00329815 /* ApiDeckCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDeckCard.swift; sourceTree = "<group>"; };
+		84B57D5B2969D13900198B90 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		84C092D72996581500126807 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		84C092DB299693CB00126807 /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +96,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8444D2682993DD6E00854E69 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8444D2692993DD9E00854E69 /* CarpetCell.swift */,
+				8444D26A2993DD9E00854E69 /* CarpetCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8444D2732993E52900854E69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				844BD7DF2993F19700D597FD /* Main.storyboard */,
+				8444D2742993E58000854E69 /* CarpetViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		848FC3B22966FE8B00329815 = {
 			isa = PBXGroup;
 			children = (
@@ -121,18 +137,19 @@
 		848FC3BD2966FE8B00329815 /* PokerGame */ = {
 			isa = PBXGroup;
 			children = (
+				84C092D62996580300126807 /* Utils */,
+				848FC3F2296702E200329815 /* Service */,
+				84B57D5A2969D10500198B90 /* Helpers */,
+				848FC3F42967041700329815 /* Model */,
+				8444D2732993E52900854E69 /* Controller */,
+				848FC3F62967043600329815 /* ViewModel */,
+				848FC3F52967041E00329815 /* Extension */,
 				848FC3BE2966FE8B00329815 /* AppDelegate.swift */,
 				848FC3C02966FE8B00329815 /* SceneDelegate.swift */,
 				848FC3CA2966FE8C00329815 /* Assets.xcassets */,
 				848FC3CC2966FE8C00329815 /* LaunchScreen.storyboard */,
 				848FC3CF2966FE8C00329815 /* Info.plist */,
 				848FC3C72966FE8B00329815 /* PokerGame.xcdatamodeld */,
-				848FC3F42967041700329815 /* Model */,
-				848FC3F32967040500329815 /* Views */,
-				848FC3F72967044000329815 /* Protocols */,
-				848FC3F62967043600329815 /* ViewModel */,
-				848FC3F52967041E00329815 /* Extension */,
-				848FC3F2296702E200329815 /* Service */,
 			);
 			path = PokerGame;
 			sourceTree = "<group>";
@@ -157,29 +174,16 @@
 		848FC3F2296702E200329815 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				848FC40A296705AF00329815 /* APIDeckCard.swift */,
-				848FC40C296705CE00329815 /* State.swift */,
+				848FC40A296705AF00329815 /* ApiDeckCard.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		848FC3F32967040500329815 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				848FC3C22966FE8B00329815 /* ViewController.swift */,
-				848FC3C42966FE8B00329815 /* Main.storyboard */,
-				848FC4052967053300329815 /* Player */,
-				848FC4002967051100329815 /* Board */,
-			);
-			name = Views;
-			path = Protocols/Views;
 			sourceTree = "<group>";
 		};
 		848FC3F42967041700329815 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				848FC3F8296704DC00329815 /* Card.swift */,
-				848FC3FA296704EA00329815 /* Player.swift */,
+				8407EA182993FBFB005DC779 /* Carpet.swift */,
+				848FC3F8296704DC00329815 /* Pack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +191,7 @@
 		848FC3F52967041E00329815 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8444D2682993DD6E00854E69 /* Cell */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -194,35 +199,26 @@
 		848FC3F62967043600329815 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				848FC4062967055900329815 /* BoardViewModel.swift */,
-				848FC4082967057100329815 /* PlayerViewModel.swift */,
+				8407EA1A2993FC11005DC779 /* CarpetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		848FC3F72967044000329815 /* Protocols */ = {
+		84B57D5A2969D10500198B90 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				84B57D5B2969D13900198B90 /* HttpRequestHelper.swift */,
 			);
-			path = Protocols;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		848FC4002967051100329815 /* Board */ = {
+		84C092D62996580300126807 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				848FC3FC2967050B00329815 /* BoardViewController.swift */,
-				848FC3FD2967050B00329815 /* BoardViewController.xib */,
+				84C092D72996581500126807 /* Tools.swift */,
+				84C092DB299693CB00126807 /* GlobalVariable.swift */,
 			);
-			path = Board;
-			sourceTree = "<group>";
-		};
-		848FC4052967053300329815 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				848FC4012967052F00329815 /* PlayerViewController.swift */,
-				848FC4022967052F00329815 /* PlayerViewController.xib */,
-			);
-			path = Player;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +230,7 @@
 			buildPhases = (
 				848FC3B72966FE8B00329815 /* Sources */,
 				848FC3B82966FE8B00329815 /* Frameworks */,
-				848FC3B92966FE8B00329815 /* Resources */,
+				8444D27C2993EE5700854E69 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -325,15 +321,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		848FC3B92966FE8B00329815 /* Resources */ = {
+		8444D27C2993EE5700854E69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848FC3CE2966FE8C00329815 /* LaunchScreen.storyboard in Resources */,
-				848FC4042967052F00329815 /* PlayerViewController.xib in Resources */,
-				848FC3CB2966FE8C00329815 /* Assets.xcassets in Resources */,
-				848FC3C62966FE8B00329815 /* Main.storyboard in Resources */,
-				848FC3FF2967050B00329815 /* BoardViewController.xib in Resources */,
+				844BD7E12993F19700D597FD /* Main.storyboard in Resources */,
+				8444D27E2993EE6400854E69 /* CarpetCell.xib in Resources */,
+				8444D27F2993EE6400854E69 /* Assets.xcassets in Resources */,
+				8444D2802993EE6400854E69 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,18 +353,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848FC3FE2967050B00329815 /* BoardViewController.swift in Sources */,
-				848FC4092967057100329815 /* PlayerViewModel.swift in Sources */,
-				848FC4032967052F00329815 /* PlayerViewController.swift in Sources */,
-				848FC3C32966FE8B00329815 /* ViewController.swift in Sources */,
 				848FC3C92966FE8B00329815 /* PokerGame.xcdatamodeld in Sources */,
-				848FC40B296705AF00329815 /* APIDeckCard.swift in Sources */,
-				848FC3F9296704DC00329815 /* Card.swift in Sources */,
-				848FC4072967055900329815 /* BoardViewModel.swift in Sources */,
+				8407EA1B2993FC11005DC779 /* CarpetViewModel.swift in Sources */,
+				84C092DC299693CB00126807 /* GlobalVariable.swift in Sources */,
+				848FC40B296705AF00329815 /* ApiDeckCard.swift in Sources */,
+				8444D2762993E58000854E69 /* CarpetViewController.swift in Sources */,
+				8407EA192993FBFB005DC779 /* Carpet.swift in Sources */,
+				84B57D5C2969D13900198B90 /* HttpRequestHelper.swift in Sources */,
+				848FC3F9296704DC00329815 /* Pack.swift in Sources */,
+				84C092D82996581500126807 /* Tools.swift in Sources */,
 				848FC3BF2966FE8B00329815 /* AppDelegate.swift in Sources */,
-				848FC3FB296704EA00329815 /* Player.swift in Sources */,
 				848FC3C12966FE8B00329815 /* SceneDelegate.swift in Sources */,
-				848FC40D296705CE00329815 /* State.swift in Sources */,
+				8444D26B2993DD9E00854E69 /* CarpetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,10 +401,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		848FC3C42966FE8B00329815 /* Main.storyboard */ = {
+		844BD7DF2993F19700D597FD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				848FC3C52966FE8B00329815 /* Base */,
+				844BD7E02993F19700D597FD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -548,9 +543,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerGame/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.casino-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -575,9 +572,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerGame/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.casino-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
