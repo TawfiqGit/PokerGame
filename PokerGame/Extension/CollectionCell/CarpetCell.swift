@@ -1,18 +1,18 @@
 //
-//  EmployeeCell.swift
-//  MVVMExample
+//  CarpetCell.swift
+//  PokerGame
 //
-//  Created by John Codeos on 06/19/20.
+//  Created by admin on 20/02/2023.
 //
 
 import UIKit
 
-class CarpetCell: UITableViewCell {
-        
+class CarpetCell: UICollectionViewCell {
+    
     class var identifier: String { return String(describing: self) }
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil) }
-    
-    @IBOutlet weak var imageViewCard: UIImageView!
+
+    @IBOutlet weak var uiImgViewCard: UIImageView!
     
     var cellViewModel: Carpet? {
         didSet {
@@ -20,40 +20,31 @@ class CarpetCell: UITableViewCell {
             downloadImage(from: url)
         }
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         initView()
     }
-
-    func initView() {
-        // Cell view customization
-        backgroundColor = .clear
-        
-        // Line separator full width
-        preservesSuperviewLayoutMargins = false
-        separatorInset = UIEdgeInsets.zero
-        layoutMargins = UIEdgeInsets.zero
-    }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
+    func initView() {
+        backgroundColor = .clear
+        preservesSuperviewLayoutMargins = false
+        layoutMargins = UIEdgeInsets.zero
     }
     
     private func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
-    
+        
     private func downloadImage(from url: URL) {
-        print("Download Started")
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
             //print(response?.suggestedFilename ?? url.lastPathComponent)
-            print("Download Finished")
-            
+            //print("Download Finished")
+                
             // always update the UI from the main thread
             DispatchQueue.main.async() { [weak self] in
-                self?.imageViewCard.image = UIImage(data: data)
+                self?.uiImgViewCard.image = UIImage(data: data)
             }
         }
     }

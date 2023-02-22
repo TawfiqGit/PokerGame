@@ -7,10 +7,6 @@
 
 import Foundation
 
-protocol DeckServiceProtocol {
-    func getPack(completion: @escaping (_ success: Bool, _ results: Pack?, _ error: String?) -> ())
-}
-
 class ApiDeckCard : DeckServiceProtocol {
    
     func getPack(completion: @escaping (Bool, Pack?, String?) -> ()) {
