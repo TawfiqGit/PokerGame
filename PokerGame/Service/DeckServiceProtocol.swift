@@ -8,5 +8,5 @@
 import Foundation
 
 protocol DeckServiceProtocol {
-    func getPack(completion: @escaping (_ success: Bool, _ results: Pack?, _ error: String?) -> ())
+    func drawCards(completion: @escaping (_ success: Bool, _ results: Pack?, _ error: String?) -> ())
 }
