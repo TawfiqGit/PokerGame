@@ -17,6 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xgP-hQ-dYB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="4"/>
+                                <color key="progressTintColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Uvm-zw-ZTM" userLabel="StackMain">
+                                <rect key="frame" x="0.0" y="109" width="393" height="34.333333333333343"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GB1-MC-vGu" userLabel="StackMenu">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8o-Oa-aeF">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NLw-mb-NPL" userLabel="StackPlayer">
                                 <rect key="frame" x="0.0" y="419" width="393" height="100"/>
                                 <subviews>
@@ -49,7 +68,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Bet"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5f-5z-2h7">
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5f-5z-2h7">
                                                 <rect key="frame" x="0.0" y="34.333333333333371" width="196.66666666666666" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Call"/>
@@ -101,11 +120,17 @@
                         <viewLayoutGuide key="safeArea" id="HZa-Wg-Gji"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Uvm-zw-ZTM" firstAttribute="leading" secondItem="DHG-Ak-q9p" secondAttribute="leading" id="1Yz-A2-Q2S"/>
+                            <constraint firstItem="xgP-hQ-dYB" firstAttribute="trailing" secondItem="Uvm-zw-ZTM" secondAttribute="trailing" id="25G-U2-Y3w"/>
                             <constraint firstItem="tP1-y9-ahB" firstAttribute="top" secondItem="NLw-mb-NPL" secondAttribute="bottom" constant="40" id="5ax-DN-F4Z"/>
                             <constraint firstItem="NLw-mb-NPL" firstAttribute="trailing" secondItem="HZa-Wg-Gji" secondAttribute="trailing" id="CYU-v5-rKn"/>
+                            <constraint firstItem="xgP-hQ-dYB" firstAttribute="leading" secondItem="DHG-Ak-q9p" secondAttribute="leading" id="Hgn-rC-9ml"/>
                             <constraint firstItem="NLw-mb-NPL" firstAttribute="leading" secondItem="HZa-Wg-Gji" secondAttribute="leading" id="IvI-dY-DJg"/>
                             <constraint firstItem="vwi-Oo-4Vb" firstAttribute="leading" secondItem="HZa-Wg-Gji" secondAttribute="leading" id="KN5-S2-pdT"/>
-                            <constraint firstItem="vwi-Oo-4Vb" firstAttribute="top" secondItem="HZa-Wg-Gji" secondAttribute="top" constant="200" id="ZGA-yU-pw9"/>
+                            <constraint firstItem="Uvm-zw-ZTM" firstAttribute="top" secondItem="xgP-hQ-dYB" secondAttribute="top" constant="50" id="MLk-m9-wxK"/>
+                            <constraint firstItem="Uvm-zw-ZTM" firstAttribute="trailing" secondItem="DHG-Ak-q9p" secondAttribute="trailing" id="SP7-rE-hf6"/>
+                            <constraint firstItem="HZa-Wg-Gji" firstAttribute="bottom" secondItem="tP1-y9-ahB" secondAttribute="bottom" constant="190.33333333333326" id="dGf-aC-ySu"/>
+                            <constraint firstItem="xgP-hQ-dYB" firstAttribute="top" secondItem="HZa-Wg-Gji" secondAttribute="top" id="dqJ-ZV-a5R"/>
                             <constraint firstItem="tP1-y9-ahB" firstAttribute="trailing" secondItem="DHG-Ak-q9p" secondAttribute="trailing" id="n2E-6J-RW9"/>
                             <constraint firstItem="vwi-Oo-4Vb" firstAttribute="trailing" secondItem="DHG-Ak-q9p" secondAttribute="trailing" id="r7X-kE-wMe"/>
                             <constraint firstItem="tP1-y9-ahB" firstAttribute="leading" secondItem="HZa-Wg-Gji" secondAttribute="leading" id="slQ-US-ofW"/>
@@ -117,9 +142,12 @@
                         <outlet property="buttonCall" destination="L5f-5z-2h7" id="743-Ot-fdX"/>
                         <outlet property="buttonFold" destination="9Yz-e2-2n8" id="2hu-7o-dPI"/>
                         <outlet property="buttonRaise" destination="Rjs-gR-Bzt" id="Kl0-m5-Er5"/>
+                        <outlet property="buttonShuffle" destination="Q8o-Oa-aeF" id="1CP-kR-w5X"/>
                         <outlet property="collectionViewCarpet" destination="vwi-Oo-4Vb" id="aw9-iR-Or1"/>
                         <outlet property="labelCash" destination="KQN-he-ti7" id="2bb-xu-LxG"/>
                         <outlet property="lablePlayer" destination="g2P-f6-7eA" id="tO1-Us-tfT"/>
+                        <outlet property="progressLoad" destination="xgP-hQ-dYB" id="a87-Mb-vxw"/>
+                        <outlet property="stackMain" destination="Uvm-zw-ZTM" id="wdc-7G-8Kw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SU9-7G-JPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

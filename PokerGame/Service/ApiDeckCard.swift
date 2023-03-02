@@ -8,11 +8,41 @@
 import Foundation
 
 class ApiDeckCard : DeckServiceProtocol {
-   
-    func getPack(completion: @escaping (Bool, Pack?, String?) -> ()) {
+    
+    let defaults = UserDefaults.standard
+    
+    init(){
+        self.createPack(userDefaut: defaults)
+    }
+    
+    func createPack(userDefaut : UserDefaults) {
         HttpRequestHelper().GET(
-            url: "https://deckofcardsapi.com/api/deck/new/draw/",
-            params: ["count": GlobaVariable.numberCardOfCarpet],
+            url: "https://www.deckofcardsapi.com/api/deck/new/",
+            params: ["": ""],
+            httpHeader: .application_json
+        ) { success, data in
+            if success {
+                do {
+                    let model = try JSONDecoder().decode(Deck.self, from: data!)
+                    userDefaut.set(model.deckId, forKey: DefautUser.deck_id)
+                    
+                    print("Succes : New Deck model id = \(model.deckId)")
+
+                } catch {
+                    print("Error: Trying to parse Deck to model")
+                }
+            } else {
+                print("Error: Deck GET Request failed")
+            }
+        }
+    }
+    
+    func drawCards(completion: @escaping (Bool, Pack?, String?) -> ()) {
+        print("drawCards Deck  id = \(defaults.string(forKey: DefautUser.deck_id)!)")
+        
+        HttpRequestHelper().GET(
+            url: "https://deckofcardsapi.com/api/deck/\(defaults.string(forKey: DefautUser.deck_id)!)/draw/",
+            params: ["count": VariableGloba.numberCardOfCarpet],
             httpHeader: .application_json
         ) { success, data in
             if success {

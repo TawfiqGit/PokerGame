@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8407EA192993FBFB005DC779 /* Carpet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EA182993FBFB005DC779 /* Carpet.swift */; };
 		8407EA1B2993FC11005DC779 /* CarpetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EA1A2993FC11005DC779 /* CarpetViewModel.swift */; };
+		8430D48A29A67629004A80C6 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430D48929A67629004A80C6 /* Deck.swift */; };
+		8430D48C29A67735004A80C6 /* DefautUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430D48B29A67735004A80C6 /* DefautUser.swift */; };
+		8433108729AFAE9500179C59 /* VariableGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433108629AFAE9500179C59 /* VariableGlobal.swift */; };
 		8444D2762993E58000854E69 /* CarpetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444D2742993E58000854E69 /* CarpetViewController.swift */; };
 		8444D27F2993EE6400854E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848FC3CA2966FE8C00329815 /* Assets.xcassets */; };
 		8444D2802993EE6400854E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848FC3CC2966FE8C00329815 /* LaunchScreen.storyboard */; };
@@ -24,9 +27,13 @@
 		848FC3E52966FE8C00329815 /* PokerGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3E42966FE8C00329815 /* PokerGameUITestsLaunchTests.swift */; };
 		848FC3F9296704DC00329815 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC3F8296704DC00329815 /* Pack.swift */; };
 		848FC40B296705AF00329815 /* ApiDeckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC40A296705AF00329815 /* ApiDeckCard.swift */; };
+		84AF934A29ACEC6D009987EA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 84AF934929ACEC6D009987EA /* FirebaseAnalytics */; };
+		84AF934C29ACEC6D009987EA /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84AF934B29ACEC6D009987EA /* FirebaseAnalyticsSwift */; };
+		84AF934E29ACEC6D009987EA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 84AF934D29ACEC6D009987EA /* FirebaseDatabase */; };
+		84AF935029ACEC6D009987EA /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84AF934F29ACEC6D009987EA /* FirebaseDatabaseSwift */; };
+		84AF935529ACF875009987EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84AF935429ACF874009987EA /* GoogleService-Info.plist */; };
 		84B57D5C2969D13900198B90 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B57D5B2969D13900198B90 /* HttpRequestHelper.swift */; };
 		84C092D82996581500126807 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C092D72996581500126807 /* Tools.swift */; };
-		84C092DC299693CB00126807 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C092DB299693CB00126807 /* GlobalVariable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,9 @@
 /* Begin PBXFileReference section */
 		8407EA182993FBFB005DC779 /* Carpet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpet.swift; sourceTree = "<group>"; };
 		8407EA1A2993FC11005DC779 /* CarpetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpetViewModel.swift; sourceTree = "<group>"; };
+		8430D48929A67629004A80C6 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		8430D48B29A67735004A80C6 /* DefautUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefautUser.swift; sourceTree = "<group>"; };
+		8433108629AFAE9500179C59 /* VariableGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableGlobal.swift; sourceTree = "<group>"; };
 		8444D2742993E58000854E69 /* CarpetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpetViewController.swift; sourceTree = "<group>"; };
 		8448CD3F29A3CA4200EB6EF7 /* DeckServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckServiceProtocol.swift; sourceTree = "<group>"; };
 		8448CD4229A3CF8E00EB6EF7 /* CarpetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpetCell.swift; sourceTree = "<group>"; };
@@ -68,9 +78,9 @@
 		848FC3E42966FE8C00329815 /* PokerGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		848FC3F8296704DC00329815 /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
 		848FC40A296705AF00329815 /* ApiDeckCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDeckCard.swift; sourceTree = "<group>"; };
+		84AF935429ACF874009987EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84B57D5B2969D13900198B90 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		84C092D72996581500126807 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
-		84C092DB299693CB00126807 /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AF935029ACEC6D009987EA /* FirebaseDatabaseSwift in Frameworks */,
+				84AF934E29ACEC6D009987EA /* FirebaseDatabase in Frameworks */,
+				84AF934C29ACEC6D009987EA /* FirebaseAnalyticsSwift in Frameworks */,
+				84AF934A29ACEC6D009987EA /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +164,7 @@
 				848FC3C02966FE8B00329815 /* SceneDelegate.swift */,
 				848FC3CA2966FE8C00329815 /* Assets.xcassets */,
 				848FC3CC2966FE8C00329815 /* LaunchScreen.storyboard */,
+				84AF935429ACF874009987EA /* GoogleService-Info.plist */,
 				848FC3CF2966FE8C00329815 /* Info.plist */,
 				848FC3C72966FE8B00329815 /* PokerGame.xcdatamodeld */,
 			);
@@ -187,6 +202,7 @@
 			children = (
 				8407EA182993FBFB005DC779 /* Carpet.swift */,
 				848FC3F8296704DC00329815 /* Pack.swift */,
+				8430D48929A67629004A80C6 /* Deck.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,8 +234,9 @@
 		84C092D62996580300126807 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8433108629AFAE9500179C59 /* VariableGlobal.swift */,
 				84C092D72996581500126807 /* Tools.swift */,
-				84C092DB299693CB00126807 /* GlobalVariable.swift */,
+				8430D48B29A67735004A80C6 /* DefautUser.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -240,6 +257,12 @@
 			dependencies = (
 			);
 			name = PokerGame;
+			packageProductDependencies = (
+				84AF934929ACEC6D009987EA /* FirebaseAnalytics */,
+				84AF934B29ACEC6D009987EA /* FirebaseAnalyticsSwift */,
+				84AF934D29ACEC6D009987EA /* FirebaseDatabase */,
+				84AF934F29ACEC6D009987EA /* FirebaseDatabaseSwift */,
+			);
 			productName = PokerGame;
 			productReference = 848FC3BB2966FE8B00329815 /* PokerGame.app */;
 			productType = "com.apple.product-type.application";
@@ -312,6 +335,9 @@
 				Base,
 			);
 			mainGroup = 848FC3B22966FE8B00329815;
+			packageReferences = (
+				84AF934829ACEC6D009987EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 848FC3BC2966FE8B00329815 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,6 +356,7 @@
 			files = (
 				844BD7E12993F19700D597FD /* Main.storyboard in Resources */,
 				8444D27F2993EE6400854E69 /* Assets.xcassets in Resources */,
+				84AF935529ACF875009987EA /* GoogleService-Info.plist in Resources */,
 				8444D2802993EE6400854E69 /* LaunchScreen.storyboard in Resources */,
 				8448CD4529A3CF8E00EB6EF7 /* CarpetCell.xib in Resources */,
 			);
@@ -356,16 +383,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8430D48A29A67629004A80C6 /* Deck.swift in Sources */,
 				848FC3C92966FE8B00329815 /* PokerGame.xcdatamodeld in Sources */,
 				8407EA1B2993FC11005DC779 /* CarpetViewModel.swift in Sources */,
 				8448CD4429A3CF8E00EB6EF7 /* CarpetCell.swift in Sources */,
-				84C092DC299693CB00126807 /* GlobalVariable.swift in Sources */,
 				848FC40B296705AF00329815 /* ApiDeckCard.swift in Sources */,
 				8444D2762993E58000854E69 /* CarpetViewController.swift in Sources */,
 				8407EA192993FBFB005DC779 /* Carpet.swift in Sources */,
 				84B57D5C2969D13900198B90 /* HttpRequestHelper.swift in Sources */,
 				848FC3F9296704DC00329815 /* Pack.swift in Sources */,
 				84C092D82996581500126807 /* Tools.swift in Sources */,
+				8430D48C29A67735004A80C6 /* DefautUser.swift in Sources */,
+				8433108729AFAE9500179C59 /* VariableGlobal.swift in Sources */,
 				848FC3BF2966FE8B00329815 /* AppDelegate.swift in Sources */,
 				8448CD4029A3CA4200EB6EF7 /* DeckServiceProtocol.swift in Sources */,
 				848FC3C12966FE8B00329815 /* SceneDelegate.swift in Sources */,
@@ -547,6 +576,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerGame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PokerGame;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.casino-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -576,6 +606,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerGame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PokerGame;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.casino-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -708,6 +739,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84AF934829ACEC6D009987EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84AF934929ACEC6D009987EA /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84AF934829ACEC6D009987EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		84AF934B29ACEC6D009987EA /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84AF934829ACEC6D009987EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		84AF934D29ACEC6D009987EA /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84AF934829ACEC6D009987EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		84AF934F29ACEC6D009987EA /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84AF934829ACEC6D009987EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		848FC3C72966FE8B00329815 /* PokerGame.xcdatamodeld */ = {
