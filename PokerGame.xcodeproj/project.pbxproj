@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8407EA192993FBFB005DC779 /* Carpet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EA182993FBFB005DC779 /* Carpet.swift */; };
 		8407EA1B2993FC11005DC779 /* CarpetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EA1A2993FC11005DC779 /* CarpetViewModel.swift */; };
-		841EB0C729AD056100B25307 /* UserDefautRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841EB0C629AD056100B25307 /* UserDefautRepository.swift */; };
 		8430D48A29A67629004A80C6 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430D48929A67629004A80C6 /* Deck.swift */; };
 		8430D48C29A67735004A80C6 /* DefautUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430D48B29A67735004A80C6 /* DefautUser.swift */; };
 		8433108729AFAE9500179C59 /* VariableGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433108629AFAE9500179C59 /* VariableGlobal.swift */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		8407EA182993FBFB005DC779 /* Carpet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpet.swift; sourceTree = "<group>"; };
 		8407EA1A2993FC11005DC779 /* CarpetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpetViewModel.swift; sourceTree = "<group>"; };
-		841EB0C629AD056100B25307 /* UserDefautRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefautRepository.swift; sourceTree = "<group>"; };
 		8430D48929A67629004A80C6 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		8430D48B29A67735004A80C6 /* DefautUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefautUser.swift; sourceTree = "<group>"; };
 		8433108629AFAE9500179C59 /* VariableGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableGlobal.swift; sourceTree = "<group>"; };
@@ -239,7 +237,6 @@
 				8433108629AFAE9500179C59 /* VariableGlobal.swift */,
 				84C092D72996581500126807 /* Tools.swift */,
 				8430D48B29A67735004A80C6 /* DefautUser.swift */,
-				841EB0C629AD056100B25307 /* UserDefautRepository.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -399,7 +396,6 @@
 				8430D48C29A67735004A80C6 /* DefautUser.swift in Sources */,
 				8433108729AFAE9500179C59 /* VariableGlobal.swift in Sources */,
 				848FC3BF2966FE8B00329815 /* AppDelegate.swift in Sources */,
-				841EB0C729AD056100B25307 /* UserDefautRepository.swift in Sources */,
 				8448CD4029A3CA4200EB6EF7 /* DeckServiceProtocol.swift in Sources */,
 				848FC3C12966FE8B00329815 /* SceneDelegate.swift in Sources */,
 			);

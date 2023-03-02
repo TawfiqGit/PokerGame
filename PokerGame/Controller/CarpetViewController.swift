@@ -25,12 +25,48 @@ class CarpetViewController: UIViewController{
     lazy var viewModel = {
         CarpetViewModel()
     }()
-        
+  
+    //MARK: LifeCycle
+    ///Après le chargement de la vue en mémoire
+    ///viewDidLoad() n'est appelé qu'une seule fois lorsque la vue est chargée
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDidLoad")
         initView()
         initValue()
         definieActionSelector()
+    }
+    
+    ///Utiliser avant que le ViewController ne soit ajouté à la hiérarchie des vues
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear")
+    }
+    
+    ///Lorsque la ViewController est modifiée dans sa disposition ou ses limites
+    override func viewWillLayoutSubviews() {
+        print("viewWillLayoutSubviews")
+    }
+    
+    ///Chaque fois que la vue est effectuée avec des calculs de mise en page automatique.
+    ///Il est également appelé si la vue est mise à jour, tournée, modifiée ou si ses limites changent
+    override func viewDidLayoutSubviews() {
+        print("viewDidLayoutSubviews")
+    }
+    
+    ///Juste après l'ajout du View Controller à la hiérarchie des vues
+    ///viewDidappear() est appelée à chaque fois que la vue apparaît à l'écran
+    override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear")
+    }
+    
+    ///Juste avant qu'il ne soit sur le point de disparaître de la hiérarchie des vues.
+    override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear")
+    }
+
+    ///Lorsque la vue disparaît de la hiérarchie des vues
+    override func viewDidDisappear(_ animated: Bool) {
+        print("viewWillDisappear")
     }
     
     func initView() {
@@ -46,6 +82,8 @@ class CarpetViewController: UIViewController{
     func definieActionSelector() {
         buttonShuffle.addTarget(self, action: #selector(actionShuffleCards), for: .touchUpInside)
         
+        viewModel.savePileCardsOfCarpet()
+        
         timerLoad = Timer.scheduledTimer(
             timeInterval: 0.5 ,
             target: self,
@@ -56,7 +94,7 @@ class CarpetViewController: UIViewController{
     }
     
     @objc func actionShuffleCards() {
-        viewModel.showPileCardsOfCarpet()
+        viewModel.carpetCellViewModels.shuffle()
     }
     
     @objc func loadProgress(){
@@ -66,7 +104,7 @@ class CarpetViewController: UIViewController{
         if(progressLoad.progress == 1.0){
             timerLoad.invalidate()
             progressLoad.progress = 0.0
-            viewModel.savePileCardsOfCarpet()
+            viewModel.showPileCardsOfCarpet()
         }
      }
     

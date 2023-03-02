@@ -58,6 +58,10 @@ class CarpetViewModel : NSObject{
         })
     }
      
+    func getCellViewModel(at indexPath: IndexPath) -> Carpet {
+        return carpetCellViewModels[indexPath.row]
+    }
+    
     private func saveCards(pack : Pack) {
         var arrayCarpet: Array = [String]()
         
@@ -66,9 +70,5 @@ class CarpetViewModel : NSObject{
             print("saveCards \(card.image)")
         }
         database.child("carpet").child("cards").setValue(arrayCarpet)
-    }
-    
-    func getCellViewModel(at indexPath: IndexPath) -> Carpet {
-        return carpetCellViewModels[indexPath.row]
     }
 }

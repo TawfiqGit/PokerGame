@@ -10,7 +10,6 @@ import Foundation
 class ApiDeckCard : DeckServiceProtocol {
     
     let defaults = UserDefaults.standard
-    var isDeckId : Bool = false
     
     init(){
         self.createPack(userDefaut: defaults)
@@ -43,7 +42,7 @@ class ApiDeckCard : DeckServiceProtocol {
         
         HttpRequestHelper().GET(
             url: "https://deckofcardsapi.com/api/deck/\(defaults.string(forKey: DefautUser.deck_id)!)/draw/",
-            params: ["count": GlobaVariable.numberCardOfCarpet],
+            params: ["count": VariableGloba.numberCardOfCarpet],
             httpHeader: .application_json
         ) { success, data in
             if success {
